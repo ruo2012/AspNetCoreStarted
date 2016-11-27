@@ -1,0 +1,15 @@
+﻿@model GetStarted.Models.HomePageModel
+
+@{ 
+    ViewBag.Title = "Home";
+}
+
+<h1>Welcome</h1>
+@foreach (var item in Model.Restaurants)
+{
+    @Html.Partial("_Summary", item)
+}
+<div>
+    <a asp-controller="Home" asp-action="Create">Create</a>
+</div>
+
