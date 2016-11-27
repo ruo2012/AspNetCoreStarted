@@ -73,7 +73,7 @@ namespace GetStarted
             app.UseFileServer();
 
             //app.UseNodeModules(env);
-            //app.UseDefaultFiles();
+            app.UseDefaultFiles();
             app.UseStaticFiles();
 
             app.UseIdentity();
